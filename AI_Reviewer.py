@@ -4,8 +4,11 @@ from tkinter import filedialog, scrolledtext, messagebox
 from groq import Groq
 import httpx
 
+# YOU NEED AN API KEY BUT IT IS FREE
+# this is "unsecure" due to the ssl verification bypass. if you want it more secure delete line 12 and remove the coma at the end of line 11
+
 client = Groq(
-    api_key="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",
+    api_key="INPUT API KEY HERE FROM chat.groq.com ITS FREE",
     http_client=httpx.Client(verify=False)
     )
 
